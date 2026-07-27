@@ -67,11 +67,16 @@ python scripts/validate_onnx.py \
 若 K230 的 nncase 不能转换 YOLO26 End-to-End ONNX：
 
 ```bash
+python scripts/train.py --data data/yolo/dataset.yaml --model yolo11n.pt --epochs 100 --device 0
+
 python scripts/export_onnx.py \
-  --weights runs/detect/train/weights/best.pt \
+  --weights runs/detect/train2/weights/best.pt \
   --output artifacts/steel-ball-yolo11n.onnx \
   --fallback-yolo11
 ```
+
+`--fallback-yolo11` 只改变 YOLO11 的导出后处理模式，不能将 YOLO26
+权重转换成 YOLO11 架构。
 
 ## K230
 

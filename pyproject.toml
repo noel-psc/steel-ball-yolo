@@ -7,12 +7,12 @@ name = "steel-ball-yolo"
 version = "0.1.0"
 description = "K230 steel ball detection training and deployment workflow"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = {text = "GPL-3.0-only"}
 dependencies = [
   "ultralytics>=8.4.0,<9",
   "onnx>=1.16,<2",
-  "onnxruntime>=1.18,<2",
+  "onnxruntime-gpu>=1.27,<1.28",
   "PyYAML>=6,<7",
   "Pillow>=10,<12",
 ]

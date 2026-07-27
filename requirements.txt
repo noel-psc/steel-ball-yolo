@@ -1,7 +1,6 @@
 ultralytics>=8.4.0,<9
 onnx>=1.16,<2
-onnxruntime>=1.18,<2
+onnxruntime-gpu>=1.27,<1.28
 PyYAML>=6,<7
 Pillow>=10,<12
 pytest>=8,<9
-
